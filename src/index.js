@@ -24,7 +24,9 @@ const closeModal = () => {
 closeModalBtn.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
 
-//alisten and handle keydown event on the entire document
+//listen and handle keydown event on the entire document
 document.addEventListener("keydown", function (event) {
-    console.log(event);
+    if (event.key === "Escape" && !modal.classList.contains("hidden")) {
+        closeModal();
+    }
 });
