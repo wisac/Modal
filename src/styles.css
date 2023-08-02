@@ -18,10 +18,10 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background: linear-gradient(to top left, #28b487, #7dd56f);
+    background: linear-gradient(to top left, #2873b4, #6fd5c1);
 }
 
-.show-modal {
+.open-modal {
     font-size: 2rem;
     font-weight: 600;
     padding: 1.75rem 3.5rem;
@@ -33,6 +33,12 @@ body {
     cursor: pointer;
 }
 
+.open-modal:hover {
+    background: linear-gradient(rgb(186, 188, 188), #d1d1d1);
+    color: white;
+
+}
+
 .close-modal {
     position: absolute;
     top: 1.2rem;
@@ -42,6 +48,10 @@ body {
     cursor: pointer;
     border: none;
     background: none;
+}
+
+.close-modal:hover {
+    color: #2873b4;
 }
 
 h1 {

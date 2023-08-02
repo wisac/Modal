@@ -1,6 +1,6 @@
 "use strict";
 
-const showModalBtns = document.querySelectorAll(".show-modal");
+const showModalBtns = document.querySelectorAll(".open-modal");
 const closeModalBtn = document.querySelector(".close-modal");
 const overlay = document.querySelector(".overlay");
 const hidden = document.querySelector(".hidden");
@@ -18,7 +18,7 @@ for (let btn of showModalBtns) {
 const closeModal = () => {
     modal.classList.add("hidden");
     overlay.classList.add("hidden");
-}
+};
 
 // when close button or overlay is clicked on
 closeModalBtn.addEventListener("click", closeModal);
@@ -26,5 +26,5 @@ overlay.addEventListener("click", closeModal);
 
 //alisten and handle keydown event on the entire document
 document.addEventListener("keydown", function (event) {
-    console.log(event)
+    console.log(event);
 });
